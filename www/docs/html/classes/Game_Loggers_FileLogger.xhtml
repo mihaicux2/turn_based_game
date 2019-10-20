@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>phpDox - Game\Loggers\FileLogger</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../index.xhtml">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../namespaces.xhtml">Namespaces</a>
+        </li>
+        <li>
+          <a href="../interfaces.xhtml">Interfaces</a>
+        </li>
+        <li>
+          <a href="../classes.xhtml">Classes</a>
+        </li>
+        <li class="separator">
+          <a href="../source/index.xhtml">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../index.xhtml">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml">Classes</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml#Game_Loggers">Game\Loggers</a>
+          </li>
+          <li class="separator">FileLogger</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#hierarchy">Hierarchy</a>
+          </li>
+          <li>
+            <a href="#constants">Constants</a>
+          </li>
+          <li>
+            <a href="#members">Members</a>
+          </li>
+          <li>
+            <a href="#methods">Methods</a>
+          </li>
+          <li>
+            <a href="../source/Game/Loggers/FileLogger.php.xhtml#line13">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1 id="introduction"><small>Game\Loggers\</small>FileLogger</h1>
+        <h4>Singleton class to be used as a simple file logging system</h4>
+        <p/>
+        <ul>
+          <li>Author: Mihail Cuculici &lt;mihai.cuculici@gmail.com&gt;</li>
+          <li>License: https://www.gnu.org/licenses/gpl-3.0.txt</li>
+        </ul>
+        <h2 id="synopsis">Synopsis</h2>
+        <div class="synopsis">class FileLogger
+                extends <a title="Game\Loggers\AbstractLogger" href="../classes/Game_Loggers_AbstractLogger.xhtml">AbstractLogger</a>
+            {<br/><ul class="none"><li>// Inherited constants from <a title="Game\Loggers\AbstractLogger" href="../classes/Game_Loggers_AbstractLogger.xhtml">AbstractLogger</a></li><li>const <a href="#NONE">NONE</a> = "[NONE]";</li><li>const <a href="#NOTICE">NOTICE</a> = "[NOTICE]";</li><li>const <a href="#WARNING">WARNING</a> = "[WARNING]";</li><li>const <a href="#ERROR">ERROR</a> = "[ERROR]";</li><li>const <a href="#FATAL">FATAL</a> = "[FATAL]";</li></ul><ul class="none"><li>// members</li><li>public static  <a href="#members">$_instance</a>;
+                    </li><li>protected  <a href="#members">$fileName</a>;
+                    </li></ul><ul class="none"><li>// Inherited members from <span title="Game\Loggers\AbstractLogger">AbstractLogger</span></li><li>protected string <a href="#members">$timeFormat</a>;
+                        </li></ul><ul class="none"><li>// methods</li><li>public static <span title="AbstractLogger">AbstractLogger</span> <a title="Game\Loggers\FileLogger" href="../classes/Game_Loggers_FileLogger/getInstance.xhtml">getInstance</a>()
+                    </li><li>private void <a title="Game\Loggers\FileLogger" href="../classes/Game_Loggers_FileLogger/__construct.xhtml">__construct</a>()
+                    </li><li>public bool <a title="Game\Loggers\FileLogger" href="../classes/Game_Loggers_FileLogger/log.xhtml">log</a>()
+                    </li></ul><ul class="none"><li>// Inherited methods from <span title="Game\Loggers\AbstractLogger">AbstractLogger</span></li><li>public string <a title="Game\Loggers\AbstractLogger" href="../classes/Game_Loggers_AbstractLogger/getDate.xhtml">getDate</a>()
+                        </li><li>public abstract void <a title="Game\Loggers\AbstractLogger" href="../classes/Game_Loggers_AbstractLogger/log.xhtml">log</a>()
+                        </li></ul>
+
+            }<br/></div>
+        <h2 id="hierarchy">Hierarchy</h2>
+        <div class="styled">
+          <h4>Extends</h4>
+          <ul>
+            <li>
+              <a title="Game\Loggers\AbstractLogger" href="../classes/Game_Loggers_AbstractLogger.xhtml">Game\Loggers\AbstractLogger</a>
+            </li>
+          </ul>
+        </div>
+        <h2 id="constants">Constants</h2>
+        <table class="styled">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="NONE">NONE</td>
+              <td>"[NONE]"</td>
+            </tr>
+            <tr>
+              <td id="NOTICE">NOTICE</td>
+              <td>"[NOTICE]"</td>
+            </tr>
+            <tr>
+              <td id="WARNING">WARNING</td>
+              <td>"[WARNING]"</td>
+            </tr>
+            <tr>
+              <td id="ERROR">ERROR</td>
+              <td>"[ERROR]"</td>
+            </tr>
+            <tr>
+              <td id="FATAL">FATAL</td>
+              <td>"[FATAL]"</td>
+            </tr>
+          </tbody>
+        </table>
+        <h2 id="members">Members</h2>
+        <div class="styled members">
+          <h4>protected</h4>
+          <ul class="members">
+            <li id="fileName"><strong>$fileName</strong>
+                —
+                string</li>
+            <li id="timeFormat"><strong>$timeFormat</strong>
+                —
+                string<br/><span class="indent">How each message's timestamp should be stored</span></li>
+          </ul>
+          <h4>public</h4>
+          <ul class="members">
+            <li id="_instance">
+              <strong>$_instance</strong>
+            </li>
+          </ul>
+        </div>
+        <h2 id="methods">Methods</h2>
+        <div class="styled">
+          <h4>public</h4>
+          <ul>
+            <li id="getInstance"><a title="Game\Loggers\FileLogger" href="../classes/Game_Loggers_FileLogger/getInstance.xhtml">getInstance()</a>
+                — Use this to get an instance of the FileLogger class</li>
+            <li id="log"><a title="Game\Loggers\FileLogger" href="../classes/Game_Loggers_FileLogger/log.xhtml">log()</a>
+                — Write messages to a predefined file</li>
+          </ul>
+          <h3>Inherited from <a title="Game\Loggers\AbstractLogger" href="../classes/Game_Loggers_AbstractLogger.xhtml">Game\Loggers\AbstractLogger</a></h3>
+          <h4>public</h4>
+          <ul>
+            <li id="getDate"><a title="Game\Loggers\AbstractLogger" href="../classes/Game_Loggers_AbstractLogger/getDate.xhtml">getDate()</a>
+                — Returns the current timestamp, in the predefined format ( + microseconds )</li>
+            <li id="log"><a title="Game\Loggers\AbstractLogger" href="../classes/Game_Loggers_AbstractLogger/log.xhtml">log()</a>
+                — This method should be implemented by extending classes.</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox 0.12.0 - Copyright (C) 2010 - 2019 by Arne Blankerts and Contributors</span>
+    </footer>
+  </body>
+</html>

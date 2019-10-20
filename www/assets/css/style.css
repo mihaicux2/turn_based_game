@@ -1,0 +1,43 @@
+.p5Canvas{
+/*    position: relative;
+    float: left;*/
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.width-50{
+    width: 49.9%;
+}
+
+.height-46vh{
+    height: 30vh;
+    overflow: auto;
+}
+
+.height-300{
+    height: 300px;
+    overflow: auto;
+}
+
+.scenarioStr{
+    height: 400px;
+    overflow: auto;
+}
+
+.controlBtn{
+    font-size: 2em;
+    cursor: pointer;
+}
+
+pre {outline: 1px solid #ccc; padding: 5px; margin: 5px; }
+.string { color: green; }
+.number { color: darkorange; }
+.boolean { color: blue; }
+.null { color: magenta; }
+.key { color: red; }

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>phpDox - Game\Skills\NormalAttack_Skill</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../index.xhtml">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../namespaces.xhtml">Namespaces</a>
+        </li>
+        <li>
+          <a href="../interfaces.xhtml">Interfaces</a>
+        </li>
+        <li>
+          <a href="../classes.xhtml">Classes</a>
+        </li>
+        <li class="separator">
+          <a href="../source/index.xhtml">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../index.xhtml">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml">Classes</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml#Game_Skills">Game\Skills</a>
+          </li>
+          <li class="separator">NormalAttack_Skill</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#hierarchy">Hierarchy</a>
+          </li>
+          <li>
+            <a href="#members">Members</a>
+          </li>
+          <li>
+            <a href="#methods">Methods</a>
+          </li>
+          <li>
+            <a href="../source/Game/Skills/NormalAttack_Skill.php.xhtml#line13">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1 id="introduction"><small>Game\Skills\</small>NormalAttack_Skill</h1>
+        <h4>Skill that doesn't improve anything. Unstackable</h4>
+        <p/>
+        <ul>
+          <li>Author: Mihail Cuculici &lt;mihai.cuculici@gmail.com&gt;</li>
+          <li>License: https://www.gnu.org/licenses/gpl-3.0.txt</li>
+        </ul>
+        <h2 id="synopsis">Synopsis</h2>
+        <div class="synopsis">class NormalAttack_Skill
+                extends <a title="Game\Skills\AbstractSkill" href="../classes/Game_Skills_AbstractSkill.xhtml">AbstractSkill</a>
+            {<br/><ul class="none"><li>// Inherited members from <span title="Game\Skills\AbstractSkill">AbstractSkill</span></li><li>protected  <a href="#members">$chance</a>;
+                        </li><li>protected <span title="Game\Skills\type">type</span> <a href="#members">$initialChance</a>;
+                        </li><li>protected <span title="Game\Skills\bool">bool</span> <a href="#members">$canBeStacked</a>;
+                        </li><li>protected <span title="Game\Skills\bool">bool</span> <a href="#members">$used</a>;
+                        </li><li>protected  <a href="#members">$usageState</a>;
+                        </li><li>protected string <a href="#members">$skillName</a>;
+                        </li></ul><ul class="none"><li>// methods</li><li>public void <a title="Game\Skills\NormalAttack_Skill" href="../classes/Game_Skills_NormalAttack_Skill/__construct.xhtml">__construct</a>()
+                    </li><li>protected <span title="AbstractSkill">AbstractSkill</span> <a title="Game\Skills\NormalAttack_Skill" href="../classes/Game_Skills_NormalAttack_Skill/apply.xhtml">apply</a>()
+                    </li><li>protected array <a title="Game\Skills\NormalAttack_Skill" href="../classes/Game_Skills_NormalAttack_Skill/alteredStates.xhtml">alteredStates</a>()
+                    </li></ul><ul class="none"><li>// Inherited methods from <span title="Game\Skills\AbstractSkill">AbstractSkill</span></li><li>protected abstract void <a title="Game\Skills\AbstractSkill" href="../classes/Game_Skills_AbstractSkill/alteredStates.xhtml">alteredStates</a>()
+                        </li><li>protected abstract void <a title="Game\Skills\AbstractSkill" href="../classes/Game_Skills_AbstractSkill/apply.xhtml">apply</a>()
+                        </li><li>public void <a title="Game\Skills\AbstractSkill" href="../classes/Game_Skills_AbstractSkill/__construct.xhtml">__construct</a>()
+                        </li><li>public string <a title="Game\Skills\AbstractSkill" href="../classes/Game_Skills_AbstractSkill/getName.xhtml">getName</a>()
+                        </li><li>public string <a title="Game\Skills\AbstractSkill" href="../classes/Game_Skills_AbstractSkill/getUsageState.xhtml">getUsageState</a>()
+                        </li><li>public AbstractSkill <a title="Game\Skills\AbstractSkill" href="../classes/Game_Skills_AbstractSkill/setChance.xhtml">setChance</a>()
+                        </li><li>public AbstractSkill <a title="Game\Skills\AbstractSkill" href="../classes/Game_Skills_AbstractSkill/setUsed.xhtml">setUsed</a>()
+                        </li><li>public bool <a title="Game\Skills\AbstractSkill" href="../classes/Game_Skills_AbstractSkill/isUsed.xhtml">isUsed</a>()
+                        </li><li>public AbstractSkill <a title="Game\Skills\AbstractSkill" href="../classes/Game_Skills_AbstractSkill/resetChance.xhtml">resetChance</a>()
+                        </li><li>public bool <a title="Game\Skills\AbstractSkill" href="../classes/Game_Skills_AbstractSkill/useSkill.xhtml">useSkill</a>()
+                        </li><li>public bool <a title="Game\Skills\AbstractSkill" href="../classes/Game_Skills_AbstractSkill/revertSkill.xhtml">revertSkill</a>()
+                        </li><li>public bool <a title="Game\Skills\AbstractSkill" href="../classes/Game_Skills_AbstractSkill/canApplyByChance.xhtml">canApplyByChance</a>()
+                        </li><li>public boolean <a title="Game\Skills\AbstractSkill" href="../classes/Game_Skills_AbstractSkill/canApplyByState.xhtml">canApplyByState</a>()
+                        </li></ul>
+
+            }<br/></div>
+        <h2 id="hierarchy">Hierarchy</h2>
+        <div class="styled">
+          <h4>Extends</h4>
+          <ul>
+            <li>
+              <a title="Game\Skills\AbstractSkill" href="../classes/Game_Skills_AbstractSkill.xhtml">Game\Skills\AbstractSkill</a>
+            </li>
+          </ul>
+        </div>
+        <h2 id="members">Members</h2>
+        <div class="styled members">
+          <h4>protected</h4>
+          <ul class="members">
+            <li id="canBeStacked"><strong>$canBeStacked</strong>
+                —
+                <a title="Game\Skills\bool" href="../classes/Game_Skills_bool.xhtml">Game\Skills\bool</a><br/><span class="indent">Whether the current skill can be applied multiple times to the same player</span></li>
+            <li id="chance"><strong>$chance</strong>
+                —
+                float<br/><span class="indent">The chance that the current skill will be applied to a player</span></li>
+            <li id="initialChance"><strong>$initialChance</strong>
+                —
+                <a title="Game\Skills\type" href="../classes/Game_Skills_type.xhtml">Game\Skills\type</a><br/><span class="indent">A copy for the initial $chance property</span></li>
+            <li id="skillName"><strong>$skillName</strong>
+                —
+                string<br/><span class="indent">Each skill should have it's own name</span></li>
+            <li id="usageState"><strong>$usageState</strong>
+                —
+                string<br/><span class="indent">A skill can be used only if the player's combat state is the same as this</span></li>
+            <li id="used"><strong>$used</strong>
+                —
+                <a title="Game\Skills\bool" href="../classes/Game_Skills_bool.xhtml">Game\Skills\bool</a><br/><span class="indent">Whether the current skill has been applied to a player</span></li>
+          </ul>
+        </div>
+        <h2 id="methods">Methods</h2>
+        <div class="styled">
+          <h4>protected</h4>
+          <ul>
+            <li id="alteredStates"><a title="Game\Skills\NormalAttack_Skill" href="../classes/Game_Skills_NormalAttack_Skill/alteredStates.xhtml">alteredStates()</a>
+                — Get the list of player stats that the current skill alters</li>
+            <li id="apply"><a title="Game\Skills\NormalAttack_Skill" href="../classes/Game_Skills_NormalAttack_Skill/apply.xhtml">apply()</a>
+                — Do nothing</li>
+          </ul>
+          <h3>Inherited from <a title="Game\Skills\AbstractSkill" href="../classes/Game_Skills_AbstractSkill.xhtml">Game\Skills\AbstractSkill</a></h3>
+          <h4>protected</h4>
+          <ul>
+            <li id="alteredStates"><a title="Game\Skills\AbstractSkill" href="../classes/Game_Skills_AbstractSkill/alteredStates.xhtml">alteredStates()</a>
+                — This must be implemented by all classes that extend the current base class This method should return an array with at least one state ( that the skill will alter )</li>
+            <li id="apply"><a title="Game\Skills\AbstractSkill" href="../classes/Game_Skills_AbstractSkill/apply.xhtml">apply()</a>
+                — This must be implemented by all classes that extend the current base class This method should be used to change/alter the player stats</li>
+          </ul>
+          <h4>public</h4>
+          <ul>
+            <li id="canApplyByChance"><a title="Game\Skills\AbstractSkill" href="../classes/Game_Skills_AbstractSkill/canApplyByChance.xhtml">canApplyByChance()</a>
+                — A skill can be applied only by chance</li>
+            <li id="canApplyByState"><a title="Game\Skills\AbstractSkill" href="../classes/Game_Skills_AbstractSkill/canApplyByState.xhtml">canApplyByState()</a>
+                — A skill can be applied only if it's stackable or it hasn't been used yes</li>
+            <li id="getName"><a title="Game\Skills\AbstractSkill" href="../classes/Game_Skills_AbstractSkill/getName.xhtml">getName()</a>
+                — Getter for the $skillName property</li>
+            <li id="getUsageState"><a title="Game\Skills\AbstractSkill" href="../classes/Game_Skills_AbstractSkill/getUsageState.xhtml">getUsageState()</a>
+                — Get the current skill's usage state. A skill can be used only if the player has the same combat state as the skill's usage state</li>
+            <li id="isUsed"><a title="Game\Skills\AbstractSkill" href="../classes/Game_Skills_AbstractSkill/isUsed.xhtml">isUsed()</a>
+                — Check if the skill is used by the owning player</li>
+            <li id="resetChance"><a title="Game\Skills\AbstractSkill" href="../classes/Game_Skills_AbstractSkill/resetChance.xhtml">resetChance()</a>
+                — Reset the $chance property to it's initial value</li>
+            <li id="revertSkill"><a title="Game\Skills\AbstractSkill" href="../classes/Game_Skills_AbstractSkill/revertSkill.xhtml">revertSkill()</a>
+                — Revert the effect of skill</li>
+            <li id="setChance"><a title="Game\Skills\AbstractSkill" href="../classes/Game_Skills_AbstractSkill/setChance.xhtml">setChance()</a>
+                — Setter for the $chance property</li>
+            <li id="setUsed"><a title="Game\Skills\AbstractSkill" href="../classes/Game_Skills_AbstractSkill/setUsed.xhtml">setUsed()</a>
+                — Setter for the $used property</li>
+            <li id="useSkill"><a title="Game\Skills\AbstractSkill" href="../classes/Game_Skills_AbstractSkill/useSkill.xhtml">useSkill()</a>
+                — Try to apply the current skill to a given player</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox 0.12.0 - Copyright (C) 2010 - 2019 by Arne Blankerts and Contributors</span>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>phpDox - Game\Players\AbstractPlayer</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../index.xhtml">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../namespaces.xhtml">Namespaces</a>
+        </li>
+        <li>
+          <a href="../interfaces.xhtml">Interfaces</a>
+        </li>
+        <li>
+          <a href="../classes.xhtml">Classes</a>
+        </li>
+        <li class="separator">
+          <a href="../source/index.xhtml">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../index.xhtml">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml">Classes</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml#Game_Players">Game\Players</a>
+          </li>
+          <li class="separator">AbstractPlayer</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#hierarchy">Hierarchy</a>
+          </li>
+          <li>
+            <a href="#members">Members</a>
+          </li>
+          <li>
+            <a href="#methods">Methods</a>
+          </li>
+          <li>
+            <a href="../source/Game/Players/AbstractPlayer.php.xhtml#line16">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1 id="introduction"><small>Game\Players\</small>AbstractPlayer</h1>
+        <h4>Abstract class to serve as a base for the future PLAYER objects.</h4>
+        <p/>
+        <ul>
+          <li>Author: Mihail Cuculici &lt;mihai.cuculici@gmail.com&gt;</li>
+          <li>License: https://www.gnu.org/licenses/gpl-3.0.txt</li>
+        </ul>
+        <h2 id="synopsis">Synopsis</h2>
+        <div class="synopsis">class AbstractPlayer
+                implements
+                <a title="Game\Players\PlayerInterface" href="../interfaces/Game_Players_PlayerInterface.xhtml">PlayerInterface</a>
+            {<br/><ul class="none"><li>// members</li><li>protected array <a href="#members">$_stats</a> =
+                        ;
+                    </li><li>protected static integer <a href="#members">$_PLAYERS</a> =
+                        0;
+                    </li><li>protected  <a href="#members">$_defaultStats</a>;
+                    </li><li>protected <span title="Game\Players\Game\Skills\SkillSet">SkillSet</span> <a href="#members">$_skillSet</a>;
+                    </li><li>protected  <a href="#members">$combatState</a>;
+                    </li><li>protected  <a href="#members">$playerId</a>;
+                    </li><li>protected static array <a href="#members">$_COMBAT_STATES</a> =
+                        ;
+                    </li></ul><ul class="none"><li>// methods</li><li>public abstract void <a title="Game\Players\AbstractPlayer" href="../classes/Game_Players_AbstractPlayer/randomizeStats.xhtml">randomizeStats</a>()
+                    </li><li>public void <a title="Game\Players\AbstractPlayer" href="../classes/Game_Players_AbstractPlayer/__construct.xhtml">__construct</a>()
+                    </li><li>public string <a title="Game\Players\AbstractPlayer" href="../classes/Game_Players_AbstractPlayer/getPlayerId.xhtml">getPlayerId</a>()
+                    </li><li>public <span title="AbstractPlayer">AbstractPlayer</span> <a title="Game\Players\AbstractPlayer" href="../classes/Game_Players_AbstractPlayer/setPlayerId.xhtml">setPlayerId</a>()
+                    </li><li>public string <a title="Game\Players\AbstractPlayer" href="../classes/Game_Players_AbstractPlayer/getCombatState.xhtml">getCombatState</a>()
+                    </li><li>protected <span title="AbstractPlayer">AbstractPlayer</span> <a title="Game\Players\AbstractPlayer" href="../classes/Game_Players_AbstractPlayer/setCombatState.xhtml">setCombatState</a>()
+                    </li><li>public <span title="AbstractPlayer">AbstractPlayer</span> <a title="Game\Players\AbstractPlayer" href="../classes/Game_Players_AbstractPlayer/beginAttack.xhtml">beginAttack</a>()
+                    </li><li>public <span title="AbstractPlayer">AbstractPlayer</span> <a title="Game\Players\AbstractPlayer" href="../classes/Game_Players_AbstractPlayer/beginDefense.xhtml">beginDefense</a>()
+                    </li><li>public bool <a title="Game\Players\AbstractPlayer" href="../classes/Game_Players_AbstractPlayer/checkCombatState.xhtml">checkCombatState</a>()
+                    </li><li>public array <a title="Game\Players\AbstractPlayer" href="../classes/Game_Players_AbstractPlayer/getStats.xhtml">getStats</a>()
+                    </li><li>public static string <a title="Game\Players\AbstractPlayer" href="../classes/Game_Players_AbstractPlayer/statsAsString.xhtml">statsAsString</a>()
+                    </li><li>public array <a title="Game\Players\AbstractPlayer" href="../classes/Game_Players_AbstractPlayer/getDefaultStats.xhtml">getDefaultStats</a>()
+                    </li><li>public <span title="AbstractPlayer">AbstractPlayer</span> <a title="Game\Players\AbstractPlayer" href="../classes/Game_Players_AbstractPlayer/setStats.xhtml">setStats</a>()
+                    </li><li>public <span title="SkillSet">SkillSet</span> <a title="Game\Players\AbstractPlayer" href="../classes/Game_Players_AbstractPlayer/getSkillSet.xhtml">getSkillSet</a>()
+                    </li><li>public array <a title="Game\Players\AbstractPlayer" href="../classes/Game_Players_AbstractPlayer/getSkills.xhtml">getSkills</a>()
+                    </li><li>public array <a title="Game\Players\AbstractPlayer" href="../classes/Game_Players_AbstractPlayer/getUsedSkills.xhtml">getUsedSkills</a>()
+                    </li><li>public <span title="AbstractPlayer">AbstractPlayer</span> <a title="Game\Players\AbstractPlayer" href="../classes/Game_Players_AbstractPlayer/useSkills.xhtml">useSkills</a>()
+                    </li><li>public <span title="AbstractPlayer">AbstractPlayer</span> <a title="Game\Players\AbstractPlayer" href="../classes/Game_Players_AbstractPlayer/revertSkills.xhtml">revertSkills</a>()
+                    </li><li>public <span title="AbstractPlayer">AbstractPlayer</span> <a title="Game\Players\AbstractPlayer" href="../classes/Game_Players_AbstractPlayer/addSkill.xhtml">addSkill</a>()
+                    </li><li>public mixed <a title="Game\Players\AbstractPlayer" href="../classes/Game_Players_AbstractPlayer/__get.xhtml">__get</a>()
+                    </li><li>public <span title="AbstractPlayer">AbstractPlayer</span> <a title="Game\Players\AbstractPlayer" href="../classes/Game_Players_AbstractPlayer/__set.xhtml">__set</a>()
+                    </li><li>public mixed <a title="Game\Players\AbstractPlayer" href="../classes/Game_Players_AbstractPlayer/__call.xhtml">__call</a>()
+                    </li><li>public array <a title="Game\Players\AbstractPlayer" href="../classes/Game_Players_AbstractPlayer/attack.xhtml">attack</a>()
+                    </li><li>private float <a title="Game\Players\AbstractPlayer" href="../classes/Game_Players_AbstractPlayer/strike.xhtml">strike</a>()
+                    </li><li>public <span title="AbstractPlayer">AbstractPlayer</span> <a title="Game\Players\AbstractPlayer" href="../classes/Game_Players_AbstractPlayer/resetStats.xhtml">resetStats</a>()
+                    </li><li>public bool <a title="Game\Players\AbstractPlayer" href="../classes/Game_Players_AbstractPlayer/isAlive.xhtml">isAlive</a>()
+                    </li></ul>
+
+            }<br/></div>
+        <h2 id="hierarchy">Hierarchy</h2>
+        <div class="styled">
+          <h4>Implements</h4>
+          <ul>
+            <li>
+              <a title="Game\Players\PlayerInterface" href="../interfaces/Game_Players_PlayerInterface.xhtml">Game\Players\PlayerInterface</a>
+            </li>
+          </ul>
+        </div>
+        <h2 id="members">Members</h2>
+        <div class="styled members">
+          <h4>protected</h4>
+          <ul class="members">
+            <li id="_COMBAT_STATES"><strong>$_COMBAT_STATES</strong>
+                —
+                array<br/><span class="indent">Static list of possible combat states</span></li>
+            <li id="_PLAYERS">
+              <strong>$_PLAYERS</strong>
+            </li>
+            <li id="_defaultStats"><strong>$_defaultStats</strong>
+                —
+                array<br/><span class="indent">Clone variable for the initial stats</span></li>
+            <li id="_skillSet"><strong>$_skillSet</strong>
+                —
+                <a title="Game\Players\Game\Skills\SkillSet" href="../classes/Game_Players_Game_Skills_SkillSet.xhtml">Game\Players\Game\Skills\SkillSet</a><br/><span class="indent">The list of skills that a player posses</span></li>
+            <li id="_stats"><strong>$_stats</strong>
+                —
+                array<br/><span class="indent">The list of stats for a player Currently, as defined by the EMAGIA task:  - health: the player health  - strength: the player's attack strength  - defense: the player's resistance to other player's attack  - speed: basically, a player's initial response time  - luck: the chance that the player can avoid another player's attack Defined in order to complete the EMAGIA tasl:  - attackstrikes: the number of times a player can hit another player. Affected by the RapidStrike skill  - damageimpact: scaler for another player's attack. Affected by the MagicShield skill</span></li>
+            <li id="combatState"><strong>$combatState</strong>
+                —
+                string<br/><span class="indent">The player's combat state.</span></li>
+            <li id="playerId"><strong>$playerId</strong>
+                —
+                string<br/><span class="indent">An identifier for the current player</span></li>
+          </ul>
+        </div>
+        <h2 id="methods">Methods</h2>
+        <div class="styled">
+          <h4>private</h4>
+          <ul>
+            <li id="strike"><a title="Game\Players\AbstractPlayer" href="../classes/Game_Players_AbstractPlayer/strike.xhtml">strike()</a>
+                — Strike another player</li>
+          </ul>
+          <h4>protected</h4>
+          <ul>
+            <li id="setCombatState"><a title="Game\Players\AbstractPlayer" href="../classes/Game_Players_AbstractPlayer/setCombatState.xhtml">setCombatState()</a>
+                — Setter for the $combatState property</li>
+          </ul>
+          <h4>public</h4>
+          <ul>
+            <li id="__construct"><a title="Game\Players\AbstractPlayer" href="../classes/Game_Players_AbstractPlayer/__construct.xhtml">__construct()</a>
+                — Class constructor. Initialize the skillset, if not null</li>
+            <li id="__call"><a title="Game\Players\AbstractPlayer" href="../classes/Game_Players_AbstractPlayer/__call.xhtml">__call()</a>
+                — Magic method to call defined methods</li>
+            <li id="__get"><a title="Game\Players\AbstractPlayer" href="../classes/Game_Players_AbstractPlayer/__get.xhtml">__get()</a>
+                — Magic method to get defined properties</li>
+            <li id="__set"><a title="Game\Players\AbstractPlayer" href="../classes/Game_Players_AbstractPlayer/__set.xhtml">__set()</a>
+                — Magic method to set defined properties</li>
+            <li id="addSkill"><a title="Game\Players\AbstractPlayer" href="../classes/Game_Players_AbstractPlayer/addSkill.xhtml">addSkill()</a>
+                — Add a new skill in the player's skillset</li>
+            <li id="attack"><a title="Game\Players\AbstractPlayer" href="../classes/Game_Players_AbstractPlayer/attack.xhtml">attack()</a>
+                — Attack another player. Defined as multiple strikes (if the current stats allow is)</li>
+            <li id="beginAttack"><a title="Game\Players\AbstractPlayer" href="../classes/Game_Players_AbstractPlayer/beginAttack.xhtml">beginAttack()</a>
+                — Set the player in the "attack" combat state</li>
+            <li id="beginDefense"><a title="Game\Players\AbstractPlayer" href="../classes/Game_Players_AbstractPlayer/beginDefense.xhtml">beginDefense()</a>
+                — Set the player in the "defend" combat state</li>
+            <li id="checkCombatState"><a title="Game\Players\AbstractPlayer" href="../classes/Game_Players_AbstractPlayer/checkCombatState.xhtml">checkCombatState()</a>
+                — Check if the player is in the given combat state</li>
+            <li id="getCombatState"><a title="Game\Players\AbstractPlayer" href="../classes/Game_Players_AbstractPlayer/getCombatState.xhtml">getCombatState()</a>
+                — Getter for the $combatState property</li>
+            <li id="getDefaultStats"><a title="Game\Players\AbstractPlayer" href="../classes/Game_Players_AbstractPlayer/getDefaultStats.xhtml">getDefaultStats()</a>
+                — Getter for the $__defaultStats property</li>
+            <li id="getPlayerId"><a title="Game\Players\AbstractPlayer" href="../classes/Game_Players_AbstractPlayer/getPlayerId.xhtml">getPlayerId()</a>
+                — Getter for the $playerId property</li>
+            <li id="getSkillSet"><a title="Game\Players\AbstractPlayer" href="../classes/Game_Players_AbstractPlayer/getSkillSet.xhtml">getSkillSet()</a>
+                — Getter for the player's skillset</li>
+            <li id="getSkills"><a title="Game\Players\AbstractPlayer" href="../classes/Game_Players_AbstractPlayer/getSkills.xhtml">getSkills()</a>
+                — Return the list of skills, as found in the current player's skillset</li>
+            <li id="getStats"><a title="Game\Players\AbstractPlayer" href="../classes/Game_Players_AbstractPlayer/getStats.xhtml">getStats()</a>
+                — Getter for the $_stats property</li>
+            <li id="getUsedSkills">
+              <a title="Game\Players\AbstractPlayer" href="../classes/Game_Players_AbstractPlayer/getUsedSkills.xhtml">getUsedSkills()</a>
+            </li>
+            <li id="isAlive"><a title="Game\Players\AbstractPlayer" href="../classes/Game_Players_AbstractPlayer/isAlive.xhtml">isAlive()</a>
+                — Check if a player is still alive</li>
+            <li id="randomizeStats"><a title="Game\Players\AbstractPlayer" href="../classes/Game_Players_AbstractPlayer/randomizeStats.xhtml">randomizeStats()</a>
+                — This method should be implemented by the extending classes.</li>
+            <li id="resetStats"><a title="Game\Players\AbstractPlayer" href="../classes/Game_Players_AbstractPlayer/resetStats.xhtml">resetStats()</a>
+                — Reset the current player's stats to default</li>
+            <li id="revertSkills"><a title="Game\Players\AbstractPlayer" href="../classes/Game_Players_AbstractPlayer/revertSkills.xhtml">revertSkills()</a>
+                — Reset stats to their previous values</li>
+            <li id="setPlayerId"><a title="Game\Players\AbstractPlayer" href="../classes/Game_Players_AbstractPlayer/setPlayerId.xhtml">setPlayerId()</a>
+                — Setter for the $playerId property</li>
+            <li id="setStats"><a title="Game\Players\AbstractPlayer" href="../classes/Game_Players_AbstractPlayer/setStats.xhtml">setStats()</a>
+                — Setter for the $_stats property</li>
+            <li id="statsAsString">
+              <a title="Game\Players\AbstractPlayer" href="../classes/Game_Players_AbstractPlayer/statsAsString.xhtml">statsAsString()</a>
+            </li>
+            <li id="useSkills"><a title="Game\Players\AbstractPlayer" href="../classes/Game_Players_AbstractPlayer/useSkills.xhtml">useSkills()</a>
+                — Apply the current skillset to the current player</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox 0.12.0 - Copyright (C) 2010 - 2019 by Arne Blankerts and Contributors</span>
+    </footer>
+  </body>
+</html>

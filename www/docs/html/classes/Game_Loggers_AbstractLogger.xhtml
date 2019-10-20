@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>phpDox - Game\Loggers\AbstractLogger</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../index.xhtml">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../namespaces.xhtml">Namespaces</a>
+        </li>
+        <li>
+          <a href="../interfaces.xhtml">Interfaces</a>
+        </li>
+        <li>
+          <a href="../classes.xhtml">Classes</a>
+        </li>
+        <li class="separator">
+          <a href="../source/index.xhtml">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../index.xhtml">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml">Classes</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml#Game_Loggers">Game\Loggers</a>
+          </li>
+          <li class="separator">AbstractLogger</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#constants">Constants</a>
+          </li>
+          <li>
+            <a href="#members">Members</a>
+          </li>
+          <li>
+            <a href="#methods">Methods</a>
+          </li>
+          <li>
+            <a href="../source/Game/Loggers/AbstractLogger.php.xhtml#line13">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1 id="introduction"><small>Game\Loggers\</small>AbstractLogger</h1>
+        <h4>Abstract class to serve as a base for the future Logger objects.</h4>
+        <p/>
+        <ul>
+          <li>Author: Mihail Cuculici &lt;mihai.cuculici@gmail.com&gt;</li>
+          <li>License: https://www.gnu.org/licenses/gpl-3.0.txt</li>
+        </ul>
+        <h2 id="synopsis">Synopsis</h2>
+        <div class="synopsis">class AbstractLogger
+            {<br/><ul class="none"><li>// constants</li><li>const NONE = "[NONE]";</li><li>const NOTICE = "[NOTICE]";</li><li>const WARNING = "[WARNING]";</li><li>const ERROR = "[ERROR]";</li><li>const FATAL = "[FATAL]";</li></ul><ul class="none"><li>// members</li><li>protected string <a href="#members">$timeFormat</a> =
+                        "d-m-Y H:i:s";
+                    </li></ul><ul class="none"><li>// methods</li><li>public string <a title="Game\Loggers\AbstractLogger" href="../classes/Game_Loggers_AbstractLogger/getDate.xhtml">getDate</a>()
+                    </li><li>public abstract bool <a title="Game\Loggers\AbstractLogger" href="../classes/Game_Loggers_AbstractLogger/log.xhtml">log</a>()
+                    </li></ul>
+
+            }<br/></div>
+        <h2 id="constants">Constants</h2>
+        <table class="styled">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="NONE">NONE</td>
+              <td>"[NONE]"</td>
+            </tr>
+            <tr>
+              <td id="NOTICE">NOTICE</td>
+              <td>"[NOTICE]"</td>
+            </tr>
+            <tr>
+              <td id="WARNING">WARNING</td>
+              <td>"[WARNING]"</td>
+            </tr>
+            <tr>
+              <td id="ERROR">ERROR</td>
+              <td>"[ERROR]"</td>
+            </tr>
+            <tr>
+              <td id="FATAL">FATAL</td>
+              <td>"[FATAL]"</td>
+            </tr>
+          </tbody>
+        </table>
+        <h2 id="members">Members</h2>
+        <div class="styled members">
+          <h4>protected</h4>
+          <ul class="members">
+            <li id="timeFormat"><strong>$timeFormat</strong>
+                —
+                string<br/><span class="indent">How each message's timestamp should be stored</span></li>
+          </ul>
+        </div>
+        <h2 id="methods">Methods</h2>
+        <div class="styled">
+          <h4>public</h4>
+          <ul>
+            <li id="getDate"><a title="Game\Loggers\AbstractLogger" href="../classes/Game_Loggers_AbstractLogger/getDate.xhtml">getDate()</a>
+                — Returns the current timestamp, in the predefined format ( + microseconds )</li>
+            <li id="log"><a title="Game\Loggers\AbstractLogger" href="../classes/Game_Loggers_AbstractLogger/log.xhtml">log()</a>
+                — This method should be implemented by extending classes.</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox 0.12.0 - Copyright (C) 2010 - 2019 by Arne Blankerts and Contributors</span>
+    </footer>
+  </body>
+</html>
