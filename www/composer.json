@@ -1,10 +1,11 @@
 {
+    "name": "mihaicux/heroGame",
+    "type": "project",
+    "description": "The Hero Game",
     "autoload": {
-        "classmap": [
-            "src/",
-            ""
-        ],
-        "psr-0": { "": "lib/" }
+        "psr-4": {
+            "Game\\": "src/Game/"
+        }
     },
     "require-dev": {
         "phpunit/phpunit": "^7"
