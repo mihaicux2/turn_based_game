@@ -36,6 +36,7 @@ services:
         ports:
             - 8000:80
         environment:
+            MYSQL_DATABASE: myDb
             MYSQL_USER: user
             MYSQL_PASSWORD: test
             MYSQL_ROOT_PASSWORD: test 
