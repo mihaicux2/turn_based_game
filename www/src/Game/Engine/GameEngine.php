@@ -8,11 +8,11 @@ use Game\Players\AbstractPlayer;
  * Class used to simulate the battle between two opponents
  * 
  * @author Mihail Cuculici <mihai.cuculici@gmail.com>
- * @version 0.8
- * @since 19 Oct 2019
+ * @version 0.9
+ * @since 28 Jul 2020
  * @license https://www.gnu.org/licenses/gpl-3.0.txt
  */
-class EMagia {
+class GameEngine {
 
     /**
      * The game's "Player One" - The hero

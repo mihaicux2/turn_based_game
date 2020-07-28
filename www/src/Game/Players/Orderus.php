@@ -5,7 +5,7 @@ use Game\Players\AbstractPlayer;
 use Game\Skills\SkillSet;
 
 /**
- * The HERO player for the EMAGIA task
+ * The HERO player for the GameEngine
  * 
  * @author Mihail Cuculici <mihai.cuculici@gmail.com>
  * @version 0.8
@@ -15,7 +15,7 @@ use Game\Skills\SkillSet;
 class Orderus extends AbstractPlayer{
     
     /**
-     * Class constructor. Initializes the player skillset with skills defined by the EMAGIA Task
+     * Class constructor. Initializes the player skillset with skills defined by the GameEngine
      */
     public function __construct() {
         
@@ -31,7 +31,7 @@ class Orderus extends AbstractPlayer{
     }
 
     /**
-     * Initialize the player's stats within the values defined by the EMAGIA task
+     * Initialize the player's stats within the values defined by the GameEngine
      */
     public function randomizeStats(): void {
         $this->_stats = array(

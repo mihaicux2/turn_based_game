@@ -4,7 +4,7 @@ include("vendor/autoload.php");
 use Game\Players\WildBeast;
 use Game\Players\Orderus;
 use Game\Loggers\FileLogger;
-use Game\Engine\EMagia;
+use Game\Engine\GameEngine;
 
 $turns = 20;
 $turn = 0;
@@ -34,7 +34,7 @@ $beast = new WildBeast();
 //$hero->setHealth(500);
 $beast->setPlayerId($beasts[$beastIt]);
 
-$game = new EMagia($hero, $beast);
+$game = new GameEngine($hero, $beast);
 //$game->setGameRounds(100);
 $scenario = $game->runGame();
 

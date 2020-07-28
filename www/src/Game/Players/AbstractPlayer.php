@@ -17,13 +17,13 @@ abstract class AbstractPlayer implements PlayerInterface{
     
     /**
      * The list of stats for a player
-     * Currently, as defined by the EMAGIA task:
+     * Currently, as defined by the GameEngine:
      *  - health: the player health
      *  - strength: the player's attack strength
      *  - defense: the player's resistance to other player's attack
      *  - speed: basically, a player's initial response time
      *  - luck: the chance that the player can avoid another player's attack
-     * Defined in order to complete the EMAGIA tasl:
+     * Defined in order to complete the GameEngine:
      *  - attackstrikes: the number of times a player can hit another player. Affected by the RapidStrike skill
      *  - damageimpact: scaler for another player's attack. Affected by the MagicShield skill
      * @var array

@@ -5,7 +5,7 @@ use Game\Players\AbstractPlayer;
 use Game\Skills\SkillSet;
 
 /**
- * The NEMESIS of the HERO from the EMAGIA task
+ * The NEMESIS of the HERO from the GameEngine
  * 
  * @author Mihail Cuculici <mihai.cuculici@gmail.com>
  * @version 0.8
@@ -15,7 +15,7 @@ use Game\Skills\SkillSet;
 class WildBeast extends AbstractPlayer{
     
     /**
-     * Class constructor. No skills, as defined by the EMAGIA Task
+     * Class constructor. No skills, as defined by the GameEngine
      */    
     public function __construct() {
         
@@ -29,7 +29,7 @@ class WildBeast extends AbstractPlayer{
     }
 
     /**
-     * Initialize the player's stats within the values defined by the EMAGIA task
+     * Initialize the player's stats within the values defined by the GameEngine
      */
     public function randomizeStats(): void {
         $this->_stats = array(

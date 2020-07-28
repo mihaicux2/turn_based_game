@@ -5,7 +5,7 @@ declare(strict_types=1);
 use PHPUnit\Framework\TestCase;
 use Game\Players\WildBeast;
 use Game\Players\Orderus;
-use Game\Engine\EMagia;
+use Game\Engine\GameEngine;
 use Game\Players\StdPlayer;
 use Game\Skills\SkillSet;
 use Game\Skills\MagicShield_Skill;
@@ -36,7 +36,7 @@ final class GameTest extends TestCase {
                 ->setStrength(1)
                 ->setLuck(0);
 
-        $game = new EMagia($hero, $animal);
+        $game = new GameEngine($hero, $animal);
         $scenario = $game->runGame();
 
         $this->assertEquals($hero->getPlayerId(), $scenario["winner"]);
@@ -50,7 +50,7 @@ final class GameTest extends TestCase {
         $hero = new Orderus();
         $hero->setPlayerId("Orderus");
 
-        $game = new EMagia($hero, $hero);
+        $game = new GameEngine($hero, $hero);
         $scenario = $game->runGame();
 
         $this->assertNotEmpty($scenario["error"]);
@@ -78,7 +78,7 @@ final class GameTest extends TestCase {
                 ->setDefense(85)
                 ->setStrength(1000);
 
-        $game = new EMagia($hero, $boss);
+        $game = new GameEngine($hero, $boss);
         $scenario = $game->runGame();
 
         $this->assertEquals($boss->getPlayerId(), $scenario["winner"]);
